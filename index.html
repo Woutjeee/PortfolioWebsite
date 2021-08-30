@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
     <title>Document</title>
 </head>
 <body>
@@ -15,7 +16,7 @@
         <div class="nav">
             <ul>
                 <li><b><a href="">Work</a></b></li>
-                <li><b><a href="">About</a></b></li>
+                <li><b><a onclick="scrollToView(document.getElementById('past'))">About</a></b></li>
                 <li><b><a href="">Contact</a></b></li>
             </ul>
         </div>
@@ -25,12 +26,20 @@
             <div class="intro">
                 <p class="blockOne-info">Hi, My name is Wout Hiemstra </p>
                 <p class="blockOne-info">Im currently in college learning to be a Software Developer.</p>
-                <a class="blockOne-info link-past" href="">Read more about my Past</a>
+                <a class="blockOne-info link-past" onclick="scrollToView(document.getElementById('past'))">Read more about my Past</a>
             </div>
         </div>
-        <div class="blocks">
-            <div class="git">
-                
+        <div class="blocks pastInfoLine" id="past">
+            <div class="past">
+                <div class="verticalLine">
+                    <span class="dot"></span>
+                    <div class="box sb2 b1">
+                        <h3>2016-2020</h3>
+                        <hr>
+                        <p>In deze periode ben ik electiricien geweest</p>
+                    </div>
+                    <span class="dot dot2"></span>
+                </div>
             </div>
         </div>
     </main>
