@@ -4,47 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/tailwind.css">
     <script src="js/main.js" defer></script>
     <title>Document</title>
 </head>
 <body>
-    <div class="nav-bar">
-        <div class="nameBlock">
-            <h3>Wout</h3>
-        </div>
-        <div class="nav">
-            <ul>
-                <li><b><a href="">Work</a></b></li>
-                <li><b><a onclick="scrollToView(document.getElementById('past'))">About</a></b></li>
-                <li><b><a href="">Contact</a></b></li>
-            </ul>
-        </div>
-    </div>
-    <main>
-        <div class="blocks">
-            <div class="intro">
-                <p class="blockOne-info">Hi, My name is Wout Hiemstra </p>
-                <p class="blockOne-info">Im currently in college learning to be a Software Developer.</p>
-                <a class="blockOne-info link-past" onclick="scrollToView(document.getElementById('past'))">Read more about my Past</a>
-            </div>
-        </div>
-        <div class="blocks pastInfoLine" id="past">
-            <div class="past">
-                <div class="verticalLine">
-                    <span class="dot"></span>
-                    <div class="box sb2 b1">
-                        <h3>2016-2020</h3>
-                        <hr>
-                        <p>In deze periode ben ik electiricien geweest</p>
+
+    <nav class="bg-gray-100">
+        <div class="max-w-7xl mx-auto px-2">
+            <div class="flex justify-between">
+                <div class="flex space-x-4">
+                    <!-- logo -->
+                    <div>
+                        <a href="#" class="flex items=center py-5 px-2 hover:text-blue-900 text-blue-500">
+                            Wout
+                        </a>
                     </div>
-                    <span class="dot dot2"></span>
+                    <!-- primary div maybe for future! -->                   
+                </div>
+                <!-- secondary nav -->
+                <div class="hidden md:flex flex items-center space-x-1">
+                    <a href="" class="py-5 px-3 text-gray-700 hover:text-gray-900">About</a>
+                    <a href="" class="py-5 px-3 text-gray-700 hover:text-gray-900">Work</a>
+                    <a href="" class="py-5 px-3 text-gray-700 hover:text-gray-900">Contact</a>
+                </div>
+
+                <!-- Mobile button here -->
+                <div class="md:hidden flex items-center">
+                    <button class="mobile-menu-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    </button>
                 </div>
             </div>
         </div>
-    </main>
-    <footer>
+    <!-- mobile menu goes here -->
+    <div class="mobile-menu hidden">
+       <a href="" class="block py-4 px-4 text-sm hover:bg-gray-200">About</a>
+       <a href="" class="block py-4 px-4 text-sm hover:bg-gray-200">Work</a>
+       <a href="" class="block py-4 px-4 text-sm hover:bg-gray-200">Contact</a>
+    </div>
 
-    </footer>
+    </nav>
+
+
+
+
+
+    <div class="py-32 text-center">
+        <h2 class="font-extrabold text-4xl">Wout Hiemstra | portfolio</h2>
+        <br>
+        <h2 class="italic text-4xl">Website word gemaakt.</h2>
+    </div>
 </body>
 </html>

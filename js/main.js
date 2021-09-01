@@ -1,5 +1,7 @@
-function scrollToView(target) {
-    target.scrollIntoView({
-        behavior: "smooth"
-    })
-}
+const btn = document.querySelector('.mobile-menu-button');
+const menu = document.querySelector('.mobile-menu');
+
+
+btn.addEventListener('click', () => {
+    menu.classList.toggle("hidden");
+});
